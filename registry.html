@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Cryptid Registry — Registry</title>
+  <link href="/bootstrap/bootswatch.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caacupe+One&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap" rel="stylesheet">
+</head>
+
+<style>
+   /* it only passed the check here????????????????????????/ */
+  :root {
+    --bs-body-font-family: "Caacupe One", sans-serif;
+  }
+
+  h1 {
+    font-family: "Saira Stencil", sans-serif;
+  }
+</style>
+
+
+<body>
+
+  <!-- TODO: navbar (same as index.html, with Registry marked active) -->
+  <nav class="navbar navbar-expand-lg bg-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">The Cryptid Registry</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link " href="index.html">Home</a>
+          <a class="nav-link active" href="registry.html">Registry</a>
+          <a class="nav-link" href="report.html">Report a Sighting</a>
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- TODO: give <main> a container (all pages) — `class="container py-5"` -->
+  <main class="container row g-4 py-5 mx-auto">
+    <h1>The Registry</h1>
+
+    <!-- TODO: card grid — row g-4, col-md-6 col-lg-4, cards with h-100, a badge, and a button.
+         The images are already here: make each one a card-img-top. -->
+    <div class="col-md-6 col-lg-4">
+      <article class="card h-100">
+        <img src="img/cryptids/hodag.webp" class="card-img-top" alt="The Hodag">
+        <h2>The Hodag <span class="badge text-bg-danger">DANGER</span></h2>
+        <p>Horns, fangs, and a documented appetite for white bulldogs. Rhinelander's own — and the only entry here with
+          a confession attached.</p>
+        <span class="btn btn-primary mb-2">Rhinelander, Wisconsin</span>
+      </article>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <article class="card h-100">
+        <img src="img/cryptids/bigfoot.webp" class="card-img-top" alt="Bigfoot">
+        <h2>Bigfoot <span class="badge text-bg-danger">DANGER</span></h2>
+        <p>The most-reported creature in the archive by a factor of ten. Big feet, bad photographs, and a great many
+          plaster casts.</p>
+        <span class="btn btn-primary mb-2">Pacific Northwest</span>
+      </article>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <article class="card h-100">
+        <img src="img/cryptids/mothman.webp" class="card-img-top" alt="Mothman">
+        <h2>Mothman <span class="badge text-bg-danger">DANGER</span></h2>
+        <p>Seven feet tall with red eyes, seen for thirteen months over Point Pleasant — a run that ended the night the
+          bridge came down.</p>
+        <span class="btn btn-primary mb-2">Point Pleasant, WV</span>
+      </article>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <article class="card h-100">
+        <img src="img/cryptids/lochness.webp" class="card-img-top" alt="The Loch Ness Monster">
+        <h2>The Loch Ness Monster <span class="badge text-bg-danger">DANGER</span></h2>
+        <p>First written down in the year 565, which makes this the oldest file we hold. Fourteen centuries of sonar,
+          submarines and murky water.</p>
+        <span class="btn btn-primary mb-2">Loch Ness, Scotland</span>
+      </article>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <article class="card h-100">
+        <img src="img/cryptids/jerseydevil.webp" class="card-img-top" alt="The Jersey Devil">
+        <h2>The Jersey Devil <span class="badge text-bg-danger">DANGER</span></h2>
+        <p>The thirteenth child of Mother Leeds, born 1735. Hooves, wings, and three hundred years of screaming in the
+          Pine Barrens.</p>
+        <span class="btn btn-primary mb-2">Pine Barrens, NJ <i class="bi bi-youtube"></i></span>
+      </article>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <article class="card h-100">
+        <img src="img/cryptids/chupacabra.webp" class="card-img-top" alt="Chupacabra">
+        <h2>Chupacabra <span class="badge text-bg-danger">DANGER</span></h2>
+        <p>Drained livestock and a ridge of spines down its back. Most reports, on inspection, resolve into coyotes with
+          mange.</p>
+        <span class="btn btn-primary mb-2">Puerto Rico</span>
+      </article>
+    </div>
+  </main>
+
+  <!-- TODO: footer -->
+  <footer class="fixed-bottom container text-center">
+    <p class="text-muted p-1">© 2026 The Cryptid Registry</p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="registry-checks.js"></script>
+</body>
+
+</html>
